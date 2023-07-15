@@ -1,0 +1,23 @@
+html {
+  font-size: 15px;
+}
+article {
+  font-size: 15px;
+}
+p {
+  font-size: 1em;
+}
+h2 {
+  font-size: 1em;
+}
+button {
+  color: white;
+  background-color: #11775e;
+  font-size: 1em;
+  padding: 0em 1em;
+  border-radius: 0.5em;
+  border-color: transparent;
+}
+ul {
+  font-size: 2rem;
+}

@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+  text-decoration: dotted underline;
+  font-size: 30px;
+  font-family: monospace;
+}
+h2 {
+  color: rgb(104, 122, 0);
+  background-color: powderblue;
+}
+button {
+  color: magenta;
+  background-color: #fc9ffc;
+}
+p {
+  color: #a80549;
+  line-height: 2;
+}
+a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: rgb(6, 139, 17);
+}

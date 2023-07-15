@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Forms in html</h1>
+    <form action="\allthebest">
+      <!-- Acion attribute is for where to send the data -->
+      <!--method attribute is for what command to send to the HTTPS server-->
+      <!--buttton ke attributes hai TYPE me Button ya Submit, input type SUBMIT se bhi button banta hai par uske text ke liye Value attribute lagega-->
+      <p>
+        <label for="naam">Enter your Username: </label>
+        <input id="naam" type="text" placeholder="Username" name="username" />
+      </p>
+      <p>
+        <label for="security">Enter Password: </label>
+        <!--label use krte hai input ko kahi or bhi use krne ke liye ya firr input kya show kr rha uske liye-->
+        <input
+          id="security"
+          type="number"
+          placeholder="Phone Number"
+          name="password"
+        />
+      </p>
+      <button>Press here</button>
+      <p>
+        <label for="emailwa">Email ID</label>
+        <!-- label me for batata hai kis input se link kar rhe hai-->
+        <input id="emailwa" type="email" placeholder="Email ID" name="email" />
+        <!--input ke attributes me id hota hai label se connect krne ke liye, type batata hai kya input kr skte hai, placeholder kya text show krega jab input blank hoga , name hota hai link krne ke liye ya kya search krega-->
+      </p>
+      <p>
+        <button type="button">Submit</button>
+      </p>
+    </form>
+    <hr />
+    <h2>Hijacking Search</h2>
+    <h3>Google Search</h3>
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" />
+      <button>Google Search</button>
+    </form>
+    <h3>YouTube Search</h3>
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" />
+      <button>YouTube Search</button>
+    </form>
+    <h2>Checkboxes</h2>
+    <form action="/terms">
+      <input type="checkbox" name="tos_agree" id="tos" checked />
+      <label for="tos">I agee to Terms & Conditions</label><br />
+      <p>
+        <input type="radio" name="abc" id="xs" value="xs" />
+        <label for="xs">XS</label>
+        <input type="radio" name="abc" id="m" value="m" />
+        <label for="m">M</label>
+        <input type="radio" name="abc" id="l" value="l" />
+        <label for="l">L</label>
+      </p>
+      <!--yaha form me saare inputs ka name same hai taaki koi ek hi select kr sake-->
+      <label for="meal">Please select a meal type: </label>
+      <select name="Meal" id="meal">
+        <!--select is for creating dropdown menu, iske attribute hai name and id(dono ka wahi kaam hai), and then we include options creating option to select from iske attribute hai value(select ke name ke aage kya value se search hoga)-->
+        <option value="">Select your meal</option>
+        <option value="Indian">Poori Bhaaji</option>
+        <option value="South Indian">Medu Vada</option>
+        <option value="chinese">Chow Chow Soup</option>
+        <option value="italian">Momo Soup</option>
+        <!--option ke ek value hai SELECTED taaki ek option already select ho-->
+      </select>
+      <label for="papad">Number of papad: </label>
+      <input type="range" id="papad" name="papad" min="1" max="5" />
+      <!--input type RANGE hota hai volume type jaise scrollbar selection ke liye, iss type me attribute hote hai min and max scroll ki value ke liye, baaki ek attribute hota hai step ki kitne step me wo proceed krega, value attribute ki already value kya hogi -->
+      <!--same hum number type me bhi kar sakte hai min and max value-->
+
+      <p>
+        <label for="essay">Write to us!!</label> <br />
+        <textarea
+          name="suggestions"
+          id="essay"
+          cols="30"
+          rows="10"
+          placeholder="Write here....."
+        ></textarea>
+      </p>
+      <button>Submit</button>
+    </form>
+    <h3>Validation Attribute Required</h3>
+    <form action="credentials/">
+      <label for="joke">Enter First Name</label>
+      <input type="text" name="first" id="joke" required />
+      <!--REQUIRED attribute se fill krna hi padega us section ko-->
+
+      <p>
+        <label for="user">Username</label>
+        <input
+          type="text"
+          name="yo"
+          id="user"
+          minlength="5"
+          maxlength="9"
+          required
+        /><!--MINLENGTH & MAXLENGTH is for defining kitne se kitne length ka characters hona chahiye, MIN or MAX bhi hote hai wo numerical values ke liye hote hai...for dates,months,age etc-->
+      </p>
+      <input type="email" />
+      <input type="url" />
+      <button>Verify</button>
+    </form>
+    <!--Explore the PATTERN value and other Input Type values on your own-->
+  </body>
+</html>

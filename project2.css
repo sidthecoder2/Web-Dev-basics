@@ -1,0 +1,89 @@
+/* * {
+  color: brown;
+} */
+/* this star is known as universal selector */
+body {
+  background-color: #90e0ef;
+}
+
+button {
+  font-size: 15px;
+  background-color: #8ecae6;
+}
+
+h1,
+h3 {
+  color: #ff2a2a;
+}
+
+p {
+  color: #ad8110;
+}
+
+#signup {
+  color: #8ecae6;
+  background-color: #f5de5a; /*ye # use hota hai id wale kaam ke liye*/
+}
+
+span {
+  color: #ffb703;
+}
+
+.tag {
+  background-color: #c9184a;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+span a {
+  color: #ffb703; /*span ke andar a tag jo aayenge unke font ka colour red hoga*/
+}
+
+h2 + button {
+  font-size: 16px;
+  background-color: #10ce20;
+  /*this will select all the button tags which comes just after h2 tag*/
+}
+
+footer > a {
+  color: #13b348;
+  /*footer ke just andar jo a aa rha sirf usi ko select krega*/
+}
+
+input[type="password"] {
+  width: 150px;
+  font-weight: bolder;
+  color: #8f12ae;
+}
+
+a[href*="google"] {
+  color: #f5de5a;
+}
+
+ul a {
+  color: magenta;
+}
+
+.post button:hover {
+  color: #ffffff;
+  background-color: blue;
+}
+
+span a:hover {
+  text-decoration: overline;
+}
+
+.post button:active {
+  background-color: #000000;
+}
+
+p::first-letter {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff2a2a;
+}
+
+p::selection {
+  background-color: blueviolet;
+  color: #ffffff;
+}
